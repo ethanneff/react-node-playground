@@ -1,0 +1,41 @@
+# REST client VSCode extension
+
+GET http://localhost:4000/posts 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJKaTJtIiwiaWF0IjoxNTk4MzMyNjE2LCJleHAiOjE1OTgzMzI2MzZ9.SR190a-GJvXNQfVSkYhvQzLaelaoeeff9_mpNnu20uc
+
+###
+
+DELETE http://localhost:4000/logout 
+content-type: application/json
+
+{
+"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhc2RhIiwiaWF0IjoxNTk4MzI5NDQxLCJleHAiOjE1OTgzMjk0NTZ9.AtBh58SZrShqeH8qcMhyxdlAfUddvxgVsRvC-eRLFFI"
+}
+
+###
+
+POST http://localhost:4000/refresh
+content-type: application/json
+
+{
+"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJLeWxlIiwiaWF0IjoxNTk4MzMyMjY4fQ.2i_EDUGibJhrnAjjBZrKlfBCVS57jJhCcl36uOVZ-6k"
+}
+
+###
+
+POST http://localhost:4000/login 
+content-type: application/json
+
+{
+  "userId": "Ji2m"
+}
+
+###
+
+GET http://localhost:4000/
+content-type: application/json
+
+{
+"userId": "Jim"
+}
+

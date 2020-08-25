@@ -1,0 +1,8 @@
+query Messages($limit: Int!, $cursor: String) {
+  messages(limit: $limit, cursor: $cursor) {
+    hasMore
+    posts {
+      ...MessageSnippet
+    }
+  }
+}

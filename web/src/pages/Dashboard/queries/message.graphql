@@ -1,0 +1,15 @@
+query Message($id: Int!) {
+  message(id: $id) {
+    id
+    createdAt
+    updatedAt
+    title
+    points
+    text
+    voteStatus
+    creator {
+      id
+      username
+    }
+  }
+}
